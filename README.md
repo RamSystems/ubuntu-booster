@@ -36,6 +36,7 @@ the following commands
 
 
 cd ubuntu-booster
+
 sudo ./install_ubuntu_booster.sh
 
 
