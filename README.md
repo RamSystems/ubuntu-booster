@@ -28,7 +28,7 @@ bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd
 
 sudo apt-get install git -y
 
-Copy the tool to home folder 
+Download the tool to home folder 
 
 Open a terminal and run the following command
 
