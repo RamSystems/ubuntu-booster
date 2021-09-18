@@ -67,7 +67,7 @@ Grub Customizer which is also installed
 To replace kernel 
 
 #
-Feel the power of Linux 
+# Feel the power of Linux 
 #
 Enjoy! 
 
