@@ -29,7 +29,6 @@ sudo add-apt-repository ppa:oibaf/test -yy
 sudo apt update && sudo apt install nohang -y
 sudo systemctl enable --now nohang-desktop.service
 
-
 sudo cp 'grub' '/etc/default/'
 
 
