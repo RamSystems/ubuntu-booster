@@ -10,7 +10,11 @@ bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd
  Its purpose is to optimize the system and make it
  work much faster while maintaining stability.
 
-# Warning !!
+#
+#
+
+ Warning !
+ 
  The installation is intended only for distributions based
  on Ubuntu LTS 20.04 and immediately after installing a new and clean system.
  Installation on old systems may overwrite existing settings.
@@ -28,9 +32,9 @@ Copy the tool to home folder
 
 Open a terminal and run the following command
 
-
-
+#
 cd ubuntu-booster && sudo ./install_ubuntu_booster.sh
+#
 
 or
 
@@ -38,11 +42,11 @@ You do not have copy to your home folder.
 You can simply move it to any folder you want and run it by
 the following commands 
 
-
+#
 cd ubuntu-booster
 
 sudo ./install_ubuntu_booster.sh
-
+#
 
 You have two options
 1. Install with the excellent liquorix kernel
