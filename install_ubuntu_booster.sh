@@ -44,7 +44,7 @@ case $CHOICE in
         1)
             sudo ./liquorix_install.sh
             echo "###############################################"
-            echo "Please support us.Bitcoin address"
+            echo "support us.Bitcoin address"
 	    echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
             echo "###############################################"
 	    echo "Installation complete Please reboot your system"
@@ -55,7 +55,7 @@ case $CHOICE in
         2)
             sudo ./ubuntu_install.sh
             echo "###############################################"
-            echo "Please support us.Bitcoin address"
+            echo "support us.Bitcoin address"
 	    echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
             echo "###############################################"
 	    echo "Installation complete Please reboot your system"
