@@ -12,6 +12,12 @@
 # For this reason it is required to make a full backup of
 # old systems before installation! 
 
+chmod +x liquorix_install.sh
+chmod +x ubuntu_install.sh
+chmod +x auto-cpufreq-installer
+chmod +x beckup.sh
+chmod +x init-zram-swapping
+
 sudo apt-get install dialog
 
 HEIGHT=15
