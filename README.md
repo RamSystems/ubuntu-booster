@@ -57,7 +57,7 @@ You have two options
 1. Install with the excellent liquorix kernel
 2. You can install with the default kernel of Ubuntu distributions
 
-It is possible to back up important files 
+It is possible to backup important files 
 
 You will always have the option to use the tool
 Grub Customizer which is also installed
