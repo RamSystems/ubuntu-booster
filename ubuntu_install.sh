@@ -75,3 +75,9 @@ sudo cp 'hdparm.conf' '/etc/hdparm.conf'
 sudo apt-get install grub-customizer -y
 
 sudo apt-get install htop
+
+# Remove ubuntu spyware 
+sudo apt remove ubuntu-report popularity-contest apport whoopsie -y
+sudo apt purge ubuntu-report popularity-contest apport whoopsie -y
+
+
