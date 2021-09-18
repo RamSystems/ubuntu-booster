@@ -9,18 +9,17 @@ bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd
  a concept of software and settings.
  Its purpose is to optimize the system and make it
  work much faster while maintaining stability.
-
-#
-#
-
- Warning !
  
  The installation is intended only for distributions based
- on Ubuntu LTS 20.04 and immediately after installing a new and clean system.
+ on Ubuntu and immediately after installing a new and clean system.
+
+ #
+ Warning !
+ 
  Installation on old systems may overwrite existing settings.
  For this reason it is required to make a full backup of
  old systems before installation! 
-
+#
 
 
 
