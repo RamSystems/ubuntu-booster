@@ -25,9 +25,8 @@ Copy the tool to home folder
 Open a terminal and run the following command
 
 
-##################################################### 
+
 cd ubuntu-booster && sudo ./install_ubuntu_booster.sh
-#####################################################
 
 or
 
@@ -35,14 +34,11 @@ You do not have copy to your home folder.
 You can simply move it to any folder you want and run it by
 the following commands 
 
-################################
+
 cd ubuntu-booster
-********************************
 sudo ./install_ubuntu_booster.sh
-################################
 
 
-###################################################################
 You have two options
 1. Install with the excellent liquorix kernel
 2. You can install with the default kernel of Ubuntu distributions
@@ -52,7 +48,6 @@ It is possible to back up important files
 You will always have the option to use the tool
 Grub Customizer which is also installed
 To replace kernel 
-##################################################################
 
 Feel the power of Linux 
 
