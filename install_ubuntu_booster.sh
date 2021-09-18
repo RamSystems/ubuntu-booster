@@ -7,7 +7,7 @@
 
 # Warning !!
 # The installation is intended only for distributions based
-# on Ubuntu LTS 20.04 and immediately after installing a new and clean system.
+# on Ubuntu and immediately after installing a new and clean system.
 # Installation on old systems may overwrite existing settings.
 # For this reason it is required to make a full backup of
 # old systems before installation! 
