@@ -1,5 +1,5 @@
 # Donate :)
-Support us in Bitcoin:
+Support in Bitcoin:
 
 bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd
 
