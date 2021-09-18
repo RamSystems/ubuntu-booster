@@ -27,6 +27,8 @@ bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd
 # Installation process....
 
 #
+sudo apt-get update
+
 sudo apt-get install git -y
 #
 Download the tool to home folder
@@ -44,11 +46,6 @@ or
 
 #
 
-You do not have copy to your home folder.
-You can simply move it to any folder you want and run it by
-the following commands 
-
-#
 cd ubuntu-booster
 #
 chmod +x install_ubuntu_booster.sh
