@@ -26,9 +26,13 @@ bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd
 
 # Installation process....
 
+#
 sudo apt-get install git -y
-
-Download the tool to home folder 
+#
+Download the tool to home folder
+#
+git clone https://github.com/mRsUrA/ubuntu-booster.git 
+#
 
 Open a terminal and run the following command
 
