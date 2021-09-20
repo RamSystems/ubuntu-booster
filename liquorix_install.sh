@@ -75,6 +75,8 @@ sudo apt-get install grub-customizer -y
 
 sudo apt-get install htop
 
+sudo apt-get install -y bpftrace
+
 # Remove ubuntu spyware 
 sudo apt remove ubuntu-report popularity-contest apport whoopsie -y
 sudo apt purge ubuntu-report popularity-contest apport whoopsie -y
