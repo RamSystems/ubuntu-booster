@@ -45,35 +45,35 @@ clear
 case $CHOICE in
         1)
             sudo ./xanmod-cacule_install.sh
-            echo "###############################################"
-            echo "Please support us.Bitcoin address"
+            echo "###################################################"
+            echo "support us.Bitcoin address"
 	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
-            echo "                                               "
+            echo "###################################################"
 	        echo "Installation complete Please reboot your system"
-            echo "###############################################"
+            echo "###################################################"
              sleep 3
                 exit
             ;;
         2)
             sudo ./liquorix_install.sh
-            echo "###############################################"
-            echo "Please support us.Bitcoin address"
+            echo "###################################################"
+            echo "support us.Bitcoin address"
 	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
-            echo "                                               "
+            echo "###################################################"
 	        echo "Installation complete Please reboot your system"
-            echo "###############################################"
+            echo "###################################################"
              sleep 3
                 exit
             ;;
 
          3)
             sudo ./ubuntu_install.sh
-            echo "###############################################"
-            echo "Please support us.Bitcoin address"
+            echo "###################################################"
+            echo "support us.Bitcoin address"
 	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
-            echo "                                               "
+            echo "###################################################"
 	        echo "Installation complete Please reboot your system"
-            echo "###############################################"
+            echo "###################################################"
              sleep 3
                 exit
             ;;    
