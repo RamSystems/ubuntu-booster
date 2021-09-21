@@ -95,4 +95,4 @@ sudo systemctl enable --now prelockd.service
 sudo systemctl start --now prelockd.service
 cd ..
 
-echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
+sudo echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
