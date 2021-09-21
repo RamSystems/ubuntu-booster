@@ -94,3 +94,5 @@ sudo apt install --reinstall ./deb/package.deb
 sudo systemctl enable --now prelockd.service
 sudo systemctl start --now prelockd.service
 cd ..
+
+sudo echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
