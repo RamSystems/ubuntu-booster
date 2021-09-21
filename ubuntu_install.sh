@@ -75,15 +75,19 @@ sudo apt-get install grub-customizer -y
 
 sudo apt-get install htop
 
-
 # Remove ubuntu spyware 
 sudo apt remove ubuntu-report popularity-contest apport whoopsie -y
 sudo apt purge ubuntu-report popularity-contest apport whoopsie -y
 
 sudo apt install profile-sync-daemon
-sudo apt-get install -y irqbalance 
+
+sudo apt-get install -y irqbalance
+
 sudo apt-get install thermald
+
 sudo apt install make fakeroot
+
+
 git clone https://github.com/hakavlad/prelockd.git && cd prelockd
 sudo deb/build.sh
 sudo apt install --reinstall ./deb/package.deb
