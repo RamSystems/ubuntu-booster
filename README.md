@@ -22,7 +22,7 @@ improve the performance of the processor and the entire hardware (critical for l
 Other important optimization software like preload && prelink && trim && nohang and other tools have been added.
 Settings and optimization software have been improved so that they work together perfectly.
 In addition, settings optimized for faster and safer use of the Internet in sysctl.conf,
-It all comes along with the option to install the excellent kernel liquorix that can upgrade you to a different label of performance or instead you can stay with
+It all comes along with the option to install The excellent kernels xanmod-cacule or liquorix that can upgrade you to a different label of performance or instead you can stay with
 Ubuntu default kernel and still enjoy great performance.
 The installer also adds the grub-customizer so you can switch between the kernels whenever you want or if necessary.
 
@@ -32,7 +32,7 @@ This is because the installation overwrites files and settings on the system.If 
 On an existing distribution you will need to perform a full backup of the entire system before that!
 
 I have been using the concept for a year and to this day I have not had any problems
-but it is worth noting that using an advanced kernel like liquorix can sometimes have an effect
+but it is worth noting that using an advanced kernels like liquorix or xanmod-cacule can sometimes have an effect
 on drivers so you have the option to perform the installation without it
 or replace it as I already mentioned using grub-customizer even after installation.
 
@@ -77,8 +77,9 @@ sudo ./install_ubuntu_booster.sh
 #
 
 You have two options
-1. Install with the excellent liquorix kernel
-2. You can install with the default kernel of Ubuntu distributions
+1. Install with the powerful xanmod-cacule kernel
+2. Install with the excellent liquorix kernel
+3. You can install with the default kernel of Ubuntu distributions
 
 It is possible to backup important files 
 
