@@ -7,11 +7,12 @@
 
 # Warning !!
 # The installation is intended only for distributions based
-# on Ubuntu and immediately after installing a new and clean system.
+# on Ubuntu LTS 20.04 and immediately after installing a new and clean system.
 # Installation on old systems may overwrite existing settings.
 # For this reason it is required to make a full backup of
 # old systems before installation! 
 
+chmod +x xanmod-cacule_install.sh
 chmod +x liquorix_install.sh
 chmod +x ubuntu_install.sh
 chmod +x auto-cpufreq-installer
@@ -27,9 +28,10 @@ BACKTITLE="Create by mRsUrA https://github.com/mRsUrA"
 TITLE="Feel the power of Linux"
 MENU="Choose one of the following options:"
 
-OPTIONS=(1 "1.Install with liquorix kernel"
-         2 "2.Install with ubuntu kernel"
-         3 "3.Backup important files")
+OPTIONS=(1 "1.Install with xanmod-cacule-kernel"
+         2 "2.Install with liquorix-kernel"
+         3 "3.Install with ubuntu-kernel"
+         4 "4.Backup important files")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -42,28 +44,40 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            sudo ./liquorix_install.sh
+            sudo ./xanmod-cacule_install.sh
             echo "###############################################"
-            echo "support us.Bitcoin address"
-	    echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
-            echo "###############################################"
-	    echo "Installation complete Please reboot your system"
+            echo "Please support us.Bitcoin address"
+	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
+            echo "                                               "
+	        echo "Installation complete Please reboot your system"
             echo "###############################################"
              sleep 3
                 exit
             ;;
         2)
-            sudo ./ubuntu_install.sh
+            sudo ./liquorix_install.sh
             echo "###############################################"
-            echo "support us.Bitcoin address"
-	    echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
-            echo "###############################################"
-	    echo "Installation complete Please reboot your system"
+            echo "Please support us.Bitcoin address"
+	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
+            echo "                                               "
+	        echo "Installation complete Please reboot your system"
             echo "###############################################"
              sleep 3
                 exit
             ;;
-        3)
+
+         3)
+            sudo ./ubuntu_install.sh
+            echo "###############################################"
+            echo "Please support us.Bitcoin address"
+	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
+            echo "                                               "
+	        echo "Installation complete Please reboot your system"
+            echo "###############################################"
+             sleep 3
+                exit
+            ;;    
+        4)
             sudo ./beckup.sh
             echo "###########################################################"
             echo "The backup is saved in '/home/beckup_ubuntu_super_booster/' "
