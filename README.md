@@ -76,7 +76,7 @@ chmod +x install_ubuntu_booster.sh
 sudo ./install_ubuntu_booster.sh
 #
 
-You have two options
+You have three options:
 1. Install with the powerful xanmod-cacule kernel
 2. Install with the excellent liquorix kernel
 3. You can install with the default kernel of Ubuntu distributions
