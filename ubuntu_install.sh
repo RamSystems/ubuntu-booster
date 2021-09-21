@@ -19,6 +19,8 @@ sudo apt-get install prelink -y
 
 sudo cp  'sysctl.conf' '/etc/sysctl.conf'
 
+sudo echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
+
 sudo apt-get install zram-config
 
     sudo cp 'init-zram-swapping' '/bin/init-zram-swapping'
@@ -94,5 +96,3 @@ sudo apt install --reinstall ./deb/package.deb
 sudo systemctl enable --now prelockd.service
 sudo systemctl start --now prelockd.service
 cd ..
-
-sudo echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
