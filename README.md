@@ -53,7 +53,7 @@ Open a terminal and run the following command
 #
 sudo apt-get update
 
-sudo apt-get install git -y
+sudo apt-get install git
 #
 Download the tool to home folder
 #
