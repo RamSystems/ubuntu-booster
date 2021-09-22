@@ -48,7 +48,7 @@ Recommends installing on a light and clean desktop like - xfce or LXDE.
 
 
 
-# Installation process....
+# install
 
 #
 Open a terminal and run the following command
