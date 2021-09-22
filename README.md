@@ -1,5 +1,8 @@
 # Donate :)
-Bitcoin:
+##### PayPal
+https://paypal.me/mrsura9494?locale.x=en_US
+
+##### BitCoin
 bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd
 
 #
