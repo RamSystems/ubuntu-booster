@@ -2,14 +2,14 @@
 
 
 #
-This tool will download,install and optimize
-a concept of software and settings.
- 
+### This tool will download,install and optimize a concept of software and settings.
 When the target
 Make any Ubuntu-based system much more efficient and fast.This of course can help a lot for weak computers,
 But the main goal is to give to professionals like ethical hackers, devops and developers The option to use
 their system in a much better way while maintaining stability.
-
+#
+#### super pressure test - 2 processors + 2gb ram ddr3.no GPU.poor internet connection (5mbps): [Youtube: ubuntu-booster](https://www.youtube.com/watch?v=yIynhvlZf4A)
+#
 The concept focuses on optimizing CPU usage, dynamic-virtual-hard memories, power consumption,
 Internet usage and in fact the entire operating system.
 With tools such as zram-zswap that are set up to work together perfectly so that the use of dynamic memory
