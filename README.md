@@ -4,7 +4,7 @@
 #
 ### This tool will download,install and optimize a concept of software and settings.
 When the target
-Make any Ubuntu-based system much more efficient and fast.This of course can help a lot for weak computers,
+is make any Ubuntu-based system much more efficient and fast.This of course can help a lot for weak computers,
 But the main goal is to give to professionals like ethical hackers, devops and developers The option to use
 their system in a much better way while maintaining stability.
 
