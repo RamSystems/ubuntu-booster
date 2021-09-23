@@ -8,6 +8,10 @@ Make any Ubuntu-based system much more efficient and fast.This of course can hel
 But the main goal is to give to professionals like ethical hackers, devops and developers The option to use
 their system in a much better way while maintaining stability.
 
+#
+### super pressure test - 2 processors + 2gb ram ddr3.no GPU.poor internet connection (5mbps): [vimeo: ubuntu-booster](https://vimeo.com/612487052)
+#
+
 The concept focuses on optimizing CPU usage, dynamic-virtual-hard memories, power consumption,
 Internet usage and in fact the entire operating system.
 With tools such as zram-zswap that are set up to work together perfectly so that the use of dynamic memory
