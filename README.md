@@ -4,7 +4,7 @@
 #
 ### This tool will download,install and optimize a concept of software and settings.
 When the target
-is make any Ubuntu-based system much more efficient and fast.This of course can help a lot for weak computers,
+is make any ubuntu-based system much more efficient and fast.This of course can help a lot for weak computers,
 But the main goal is to give to professionals like ethical hackers, devops and developers The option to use
 their system in a much better way while maintaining stability.
 
@@ -28,7 +28,7 @@ Ubuntu default kernel and still enjoy great performance.
 The installer also adds the grub-customizer so you can switch between the kernels whenever you want or if necessary.
 
 It is important to clarify
-The installation is only for Ubuntu-based distributions (this includes Mint and similar distributions) and only for new and clean systems!
+The installation is only for ubuntu-based distributions (this includes Mint and similar distributions) and only for new and clean systems!
 This is because the installation overwrites files and settings on the system.If you still want to install
 On an existing distribution you will need to perform a full backup of the entire system before that!
 
