@@ -8,7 +8,7 @@ echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.
 wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/xanmod-kernel.gpg add -
 sudo apt update && sudo apt install linux-xanmod-cacule -y
 
-sudo sysctl kernel.sched_interactivity_factor=50
+sudo sysctl kernel.sched_interactivity_factor=0
 
 sudo sysctl kernel.sched_max_lifetime_ms=60000
 
@@ -24,11 +24,14 @@ sudo apt-get install prelink -y
     sudo cp '70debconf' '/etc/apt/apt.conf.d/70debconf'
 
 
-
 sudo cp  'sysctl.conf' '/etc/sysctl.conf'
+    sudo echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
+    sudo -i echo 'kernel.sched_latency_ns = 3000000' >> /etc/sysctl.conf
+    sudo -i echo 'kernel.sched_min_granularity_ns = 300000' >> /etc/sysctl.conf
+    sudo -i echo 'kernel.sched_wakeup_granularity_ns = 500000' >> /etc/sysctl.conf
+    sudo -i echo 'kernel.sched_migration_cost_ns = 50000' >> /etc/sysctl.conf
+    sudo -i echo 'kernel.sched_nr_migrate = 128' >> /etc/sysctl.conf
 
-sudo apt-get install zram-config
-    sudo cp 'init-zram-swapping' '/bin/init-zram-swapping'
 
 sudo apt-get install gnome-disk-utility -y
 
@@ -37,7 +40,6 @@ sudo apt update && sudo apt install nohang -y
 sudo systemctl enable --now nohang-desktop.service
 
 sudo cp 'grub' '/etc/default/'
-
 
 sudo update-grub
 
@@ -53,17 +55,6 @@ cd auto-cpufreq
 sudo bash auto-cpufreq-installer -i
 sudo auto-cpufreq --install 
 cd ..
-
-sudo apt-get install tlp  -y
-sudo systemctl enable tlp.service
-sudo systemctl mask systemd-rfkill.service
-sudo systemctl mask systemd-rfkill.socket
-
-sudo add-apt-repository ppa:linuxuprising/apps -yy
-sudo apt-get update
-sudo apt install tlpui -y
-
-sudo cp 'tlp.conf' '/etc/tlp.conf'
 
 
 sudo cp 'trim' '/etc/cron.daily/'
@@ -98,3 +89,43 @@ sudo apt install --reinstall ./deb/package.deb
 sudo systemctl enable --now prelockd.service
 sudo systemctl start --now prelockd.service
 cd ..
+
+sudo apt-get install earlyoom
+
+    sudo cp 'earlyoom' '/etc/default/earlyoom'
+        sudo systemctl restart earlyoom
+
+
+sudo apt-get remove update-notifier -y
+sudo apt-get purge update-notifier -y
+
+sudo apt-get remove thunderbird -y
+sudo apt-get purge thunderbird -y
+
+
+sudo apt-get install synaptic -y
+
+sudo apt-get remove gnome-software -y
+sudo apt-get purge gnome-software -y
+
+sudo apt-get update && sudo apt-get upgrade -y
+
+sudo apt-get install zram-config
+    sudo cp 'init-zram-swapping' '/bin/init-zram-swapping'
+
+
+sudo apt-get install tlp -y
+sudo systemctl enable tlp.service
+sudo systemctl mask systemd-rfkill.service
+sudo systemctl mask systemd-rfkill.socket
+
+
+sudo add-apt-repository ppa:linuxuprising/apps -yy
+sudo apt-get update
+sudo apt install tlpui -y
+
+sudo cp 'tlp.conf' '/etc/tlp.conf'
+
+sudo apt-get autoclean
+
+sudo apt-get auto-remove -yy
