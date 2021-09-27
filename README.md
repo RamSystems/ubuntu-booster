@@ -10,7 +10,7 @@ their system in a much better way while maintaining stability.
 
 #
 ### super pressure test - 2 processors + 2gb ram ddr3.no GPU.poor internet connection (10mbps):
-### [video: ubuntu-booster](https://archive.org/details/ubuntu-booster)
+### [video: ubuntu-booster](https://vimeo.com/612487052)
 #
 
 The concept focuses on optimizing CPU usage, dynamic-virtual-hard memories, power consumption,
