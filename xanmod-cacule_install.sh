@@ -26,6 +26,7 @@ sudo apt-get install prelink -y
 
 sudo cp  'sysctl.conf' '/etc/sysctl.conf'
     sudo echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
+    sudo -i echo '#CFS tweak' >> /etc/sysctl.conf
     sudo -i echo 'kernel.sched_latency_ns = 3000000' >> /etc/sysctl.conf
     sudo -i echo 'kernel.sched_min_granularity_ns = 300000' >> /etc/sysctl.conf
     sudo -i echo 'kernel.sched_wakeup_granularity_ns = 500000' >> /etc/sysctl.conf
