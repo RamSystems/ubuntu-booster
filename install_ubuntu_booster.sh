@@ -16,7 +16,7 @@ chmod +x xanmod-cacule_install.sh
 chmod +x liquorix_install.sh
 chmod +x ubuntu_install.sh
 chmod +x auto-cpufreq-installer
-chmod +x beckup.sh
+chmod +x backup.sh
 chmod +x init-zram-swapping
 
 sudo apt-get install dialog
@@ -78,7 +78,7 @@ case $CHOICE in
                 exit
             ;;    
         4)
-            sudo ./beckup.sh
+            sudo ./backup.sh
             echo "###########################################################"
             echo "The backup is saved in '/home/beckup_ubuntu_super_booster/' "
             echo "###########################################################"
