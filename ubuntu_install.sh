@@ -11,7 +11,7 @@ sudo apt-get install preload
 
 sudo apt-get install prelink -y
 
-    sudo cp 'prelink.conf' '/etc/prelink.conf'
+    sudo cp 'prelink' '/etc/default/prelink
     sudo /etc/cron.daily/prelink
     sudo cp '70debconf' '/etc/apt/apt.conf.d/70debconf'
 
