@@ -13,7 +13,7 @@ EARLYOOM_ARGS="-r 60"
 # EARLYOOM_ARGS="-m 5"
 
 # Available minimum memory 15% and free minimum swap 5%
-EARLYOOM_ARGS="-m 15 -s 5"
+EARLYOOM_ARGS="-m 1 -s 5"
 
 # Avoid killing processes whose name matches this regexp
 EARLYOOM_ARGS="--avoid '(^|/)(init|X|sshd|firefox)$'"
