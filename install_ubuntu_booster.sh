@@ -46,9 +46,6 @@ case $CHOICE in
         1)
             sudo ./xanmod-cacule_install.sh
             echo "###################################################"
-            echo "support us.Bitcoin address"
-	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
-            echo "###################################################"
 	        echo "Installation complete Please reboot your system"
             echo "###################################################"
              sleep 3
@@ -56,9 +53,6 @@ case $CHOICE in
             ;;
         2)
             sudo ./liquorix_install.sh
-            echo "###################################################"
-            echo "support us.Bitcoin address"
-	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
             echo "###################################################"
 	        echo "Installation complete Please reboot your system"
             echo "###################################################"
@@ -68,9 +62,6 @@ case $CHOICE in
 
          3)
             sudo ./ubuntu_install.sh
-            echo "###################################################"
-            echo "support us.Bitcoin address"
-	        echo "bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd"
             echo "###################################################"
 	        echo "Installation complete Please reboot your system"
             echo "###################################################"
