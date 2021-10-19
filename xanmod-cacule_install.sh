@@ -8,7 +8,7 @@ echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.
 wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/xanmod-kernel.gpg add -
 sudo apt update && sudo apt install linux-xanmod-cacule -y
 
-sudo sysctl kernel.sched_interactivity_factor=0
+sudo sysctl kernel.sched_interactivity_factor=7
 
 sudo sysctl kernel.sched_max_lifetime_ms=60000
 
