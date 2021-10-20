@@ -63,7 +63,7 @@ sudo apt-get install git
 #
 Download the tool to home folder
 #
-git clone https://github.com/mRsUrA/ubuntu-booster.git 
+git clone https://github.com/RamSystems/ubuntu-booster.git 
 
 #
 cd ubuntu-booster &&  chmod +x install_ubuntu_booster.sh &&  sudo ./install_ubuntu_booster.sh -yy
