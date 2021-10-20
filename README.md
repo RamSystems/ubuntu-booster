@@ -9,8 +9,11 @@ But the main goal is to give to professionals like ethical hackers, devops and d
 their system in a much better way while maintaining stability.
 
 #
-### super pressure test - 2 processors + 2gb ram ddr3.no GPU.poor internet connection (10mbps):
-### [video: ubuntu-booster](https://vimeo.com/612487052)
+#### Improve Linux system performance for work or gaming with ubuntu-booster tool
+#### [youtube: ubuntu-booster](https://www.youtube.com/watch?v=0RiEPVIc6jQ)
+
+#### super pressure test - 2 processors + 2gb ram ddr3.no GPU.poor internet connection (10mbps):
+#### [video2: ubuntu-booster](https://vimeo.com/612487052)
 #
 
 The concept focuses on optimizing CPU usage, dynamic-virtual-hard memories, power consumption,
