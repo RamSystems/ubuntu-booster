@@ -46,7 +46,7 @@ case $CHOICE in
         1)
             sudo ./xanmod-cacule_install.sh
             echo "###################################################"
-	        echo "Installation complete Please reboot your system"
+	        echo "Installation complete please reboot your system"
             echo "###################################################"
              sleep 3
                 exit
@@ -54,7 +54,7 @@ case $CHOICE in
         2)
             sudo ./liquorix_install.sh
             echo "###################################################"
-	        echo "Installation complete Please reboot your system"
+	        echo "Installation complete please reboot your system"
             echo "###################################################"
              sleep 3
                 exit
@@ -63,7 +63,7 @@ case $CHOICE in
          3)
             sudo ./ubuntu_install.sh
             echo "###################################################"
-	        echo "Installation complete Please reboot your system"
+	        echo "Installation complete please reboot your system"
             echo "###################################################"
              sleep 3
                 exit
