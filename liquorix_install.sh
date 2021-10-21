@@ -112,6 +112,12 @@ sudo apt install tlpui -y
 
 sudo cp 'tlp.conf' '/etc/tlp.conf'
 
+git clone https://github.com/hakavlad/memavaild.git && cd memavaild
+deb/build.sh
+sudo apt install --reinstall ./deb/package.deb
+sudo systemctl enable --now memavaild.service
+sudo cp 'memavaild.conf' '/etc/memavaild.conf'
+
 sudo apt-get autoclean -y
 
 sudo apt-get auto-remove -yy
