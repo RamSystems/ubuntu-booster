@@ -51,7 +51,6 @@ sudo -i echo lz4_compress >> /etc/initramfs-tools/modules
 sudo -i echo z3fold >> /etc/initramfs-tools/modules
 sudo update-initramfs -u
 
-
 git clone https://github.com/AdnanHodzic/auto-cpufreq.git
 cp 'auto-cpufreq-installer' 'auto-cpufreq'
 cd auto-cpufreq
