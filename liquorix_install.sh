@@ -31,8 +31,10 @@ sudo add-apt-repository ppa:oibaf/test -yy
 sudo apt update && sudo apt install nohang -y
 sudo systemctl enable --now nohang-desktop.service
 
-sudo cp 'grub' '/etc/default/'
 
+sudo apt-get install grub-customizer -y
+
+sudo cp 'grub' '/etc/default/'
 
 sudo update-grub
 
@@ -58,9 +60,6 @@ sudo apt-get install mesa-utils-extra -y
 
 sudo cp 'hdparm.conf' '/etc/hdparm.conf'
 
-
-sudo apt-get install grub-customizer -y
-
 sudo apt-get install htop
 
 # Remove ubuntu spyware 
@@ -82,12 +81,6 @@ sudo apt install --reinstall ./deb/package.deb
 sudo systemctl enable --now prelockd.service
 sudo systemctl start --now prelockd.service
 cd ..
-
-sudo apt-get install earlyoom
-
-    sudo cp 'earlyoom' '/etc/default/earlyoom'
-        sudo systemctl restart earlyoom
-
 
 sudo apt-get remove update-notifier -y
 sudo apt-get purge update-notifier -y
@@ -119,6 +112,13 @@ sudo apt install tlpui -y
 
 sudo cp 'tlp.conf' '/etc/tlp.conf'
 
-sudo apt-get autoclean
+sudo apt install schedtool git -y
+sudo git clone https://github.com/Nefelim4ag/Ananicy.git
+sudo ./Ananicy/package.sh debian
+sudo dpkg -i ./Ananicy/ananicy-*.deb
+sudo systemctl enable ananicy
+sudo systemctl start ananicy
+
+sudo apt-get autoclean -y
 
 sudo apt-get auto-remove -yy
