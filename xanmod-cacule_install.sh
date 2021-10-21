@@ -121,14 +121,6 @@ sudo apt install tlpui -y
 
 sudo cp 'tlp.conf' '/etc/tlp.conf'
 
-sudo apt install schedtool git -y
-sudo git clone https://github.com/Nefelim4ag/Ananicy.git
-sudo ./Ananicy/package.sh debian
-sudo dpkg -i ./Ananicy/ananicy-*.deb
-sudo systemctl enable ananicy
-sudo systemctl start ananicy
-
-
 sudo apt-get autoclean -y
 
 sudo apt-get auto-remove -yy
