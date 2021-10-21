@@ -4,7 +4,6 @@ sudo apt-get update && sudo apt-get upgrade -y
 
 sudo apt-get install git -y
 
-
 sudo add-apt-repository ppa:damentz/liquorix -yy
 sudo apt-get update
 sudo apt-get install linux-image-liquorix-amd64 linux-headers-liquorix-amd64 -yy
