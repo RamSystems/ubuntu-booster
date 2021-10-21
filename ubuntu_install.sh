@@ -108,12 +108,11 @@ sudo apt-get purge update-notifier -y
 sudo apt-get remove thunderbird -y
 sudo apt-get purge thunderbird -y
 
-sudo apt install schedtool git -y
-sudo git clone https://github.com/Nefelim4ag/Ananicy.git
-sudo ./Ananicy/package.sh debian
-sudo dpkg -i ./Ananicy/ananicy-*.deb
-sudo systemctl enable ananicy
-sudo systemctl start ananicy
+git clone https://github.com/hakavlad/memavaild.git && cd memavaild
+deb/build.sh
+sudo apt install --reinstall ./deb/package.deb
+sudo systemctl enable --now memavaild.service
+sudo cp 'memavaild.conf' '/etc/memavaild.conf'
 
 sudo apt-get autoclean -y
 
