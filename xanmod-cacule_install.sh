@@ -124,6 +124,7 @@ git clone https://github.com/hakavlad/memavaild.git && cd memavaild
 deb/build.sh
 sudo apt install --reinstall ./deb/package.deb
 sudo systemctl enable --now memavaild.service
+cd ..
 sudo cp 'memavaild.conf' '/etc/memavaild.conf'
 
 sudo apt-get autoclean -y
