@@ -113,10 +113,11 @@ sudo cp 'tlp.conf' '/etc/tlp.conf'
 
 git clone https://github.com/hakavlad/memavaild.git && cd memavaild
 deb/build.sh
-sudo apt install --reinstall ./deb/package.deb
-sudo systemctl enable --now memavaild.service
+sudo apt-get install --reinstall ./deb/package.deb
 cd ..
-
+sudo cp 'memavaild.conf' '/etc/memavaild.conf'
+sudo systemctl enable --now memavaild.service
+sudo systemctl restart --now memavaild.service
 sudo apt-get autoclean -y
 
 sudo apt-get auto-remove -yy
