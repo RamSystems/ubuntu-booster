@@ -24,7 +24,7 @@ sudo apt-get install dialog
 HEIGHT=15
 WIDTH=40
 CHOICE_HEIGHT=4
-BACKTITLE="Create by mRsUrA https://github.com/mRsUrA"
+BACKTITLE="Create by RamSystems:https://github.com/RamSystems/ubuntu-booster"
 TITLE="Feel the power of Linux"
 MENU="Choose one of the following options:"
 
