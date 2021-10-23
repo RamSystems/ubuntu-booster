@@ -8,7 +8,7 @@ echo 'deb http://deb.xanmod.org releases main' | sudo tee /etc/apt/sources.list.
 wget -qO - https://dl.xanmod.org/gpg.key | sudo apt-key --keyring /etc/apt/trusted.gpg.d/xanmod-kernel.gpg add -
 sudo apt update && sudo apt install linux-xanmod-cacule -y
 
-sudo sysctl kernel.sched_interactivity_factor=0
+sudo sysctl kernel.sched_interactivity_factor=5
 
 sudo sysctl kernel.sched_max_lifetime_ms=60000
 
@@ -26,6 +26,7 @@ sudo apt-get install prelink -y
 
 sudo cp  'sysctl.conf' '/etc/sysctl.conf'
     sudo echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
+    sudo -i echo '' >> /etc/sysctl.conf
     sudo -i echo '#CFS tweak' >> /etc/sysctl.conf
     sudo -i echo 'kernel.sched_latency_ns = 3000000' >> /etc/sysctl.conf
     sudo -i echo 'kernel.sched_min_granularity_ns = 300000' >> /etc/sysctl.conf
@@ -122,9 +123,12 @@ sudo cp 'tlp.conf' '/etc/tlp.conf'
 
 git clone https://github.com/hakavlad/memavaild.git && cd memavaild
 deb/build.sh
-sudo apt install --reinstall ./deb/package.deb
-sudo systemctl enable --now memavaild.service
+sudo apt-get install --reinstall ./deb/package.deb
 cd ..
+sudo cp 'memavaild.conf' '/etc/memavaild.conf'
+sudo systemctl enable --now memavaild.service
+sudo systemctl restart --now memavaild.service
+
 
 sudo apt-get autoclean -y
 
