@@ -95,9 +95,4 @@ To replace kernel
 # Feel the power of Linux 
 
 #### Enjoy!
-#
-## Donate
-#### BitCoin:
-### bc1ql49pjc20jpddgkr0vn8xssefmt24tkjr00f0kd
-#
-#
+
