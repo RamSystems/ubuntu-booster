@@ -82,7 +82,7 @@ sudo ./install_ubuntu_booster.sh
 
 You have three options:
 1. Install with the excellent liquorix kernel
-2. Install with the xanmod-cacule kernel
+2. Install with xanmod-cacule kernel
 3. You can install with the default kernel of Ubuntu distributions
 
 It is possible to backup important files 
