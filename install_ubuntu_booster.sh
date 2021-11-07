@@ -28,8 +28,8 @@ BACKTITLE="Create by RamSystems:https://github.com/RamSystems/ubuntu-booster"
 TITLE="Feel the power of Linux"
 MENU="Choose one of the following options:"
 
-OPTIONS=(1 "1.Install with xanmod-cacule-kernel"
-         2 "2.Install with liquorix-kernel"
+OPTIONS=(1 "1.Install with liquorix-kernel"
+         2 "2.Install with xanmod-cacule-kernel"
          3 "3.Install with ubuntu-kernel"
          4 "4.Backup important files")
 
@@ -44,7 +44,7 @@ CHOICE=$(dialog --clear \
 clear
 case $CHOICE in
         1)
-            sudo ./xanmod-cacule_install.sh
+            sudo ./liquorix_install.sh
             echo "###################################################"
 	        echo "Installation complete please reboot your system"
             echo "###################################################"
@@ -52,7 +52,7 @@ case $CHOICE in
                 exit
             ;;
         2)
-            sudo ./liquorix_install.sh
+            sudo ./xanmod-cacule_install.sh
             echo "###################################################"
 	        echo "Installation complete please reboot your system"
             echo "###################################################"
