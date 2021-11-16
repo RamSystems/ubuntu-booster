@@ -54,6 +54,14 @@ cd ..
 sudo cp 'trim' '/etc/cron.daily/'
 sudo chmod a+x /etc/cron.daily/trim
 
+# use RAM instead of SSD for temp and log files
+sudo -i echo '' >> /etc/fstab
+sudo -i echo '# use RAM instead of SSD for temp and log files' >> /etc/fstab
+sudo -i echo 'tmpfs /tmp tmpfs defaults,noatime,mode=1777 0 0' >> /etc/fstab
+sudo -i echo 'tmpfs /var/log tmpfs defaults,noatime,mode=0755 0 0' >> /etc/fstab
+sudo -i echo 'tmpfs /var/spool tmpfs defaults,noatime,mode=1777 0 0' >> /etc/fstab
+sudo -i echo 'tmpfs /var/tmp tmpfs defaults,noatime,mode=1777 0 0' >> /etc/fstab
+
 sudo apt-get install mesa-utils
 sudo apt-get install mesa-utils-extra -y
 
