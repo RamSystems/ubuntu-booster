@@ -39,7 +39,7 @@ sudo update-grub
 
 sudo -i echo lz4 >> /etc/initramfs-tools/modules
 sudo -i echo lz4_compress >> /etc/initramfs-tools/modules
-sudo -i echo z3fold >> /etc/initramfs-tools/modules
+sudo -i echo zsmalloc >> /etc/initramfs-tools/modules
 sudo update-initramfs -u
 
 
