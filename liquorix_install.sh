@@ -69,6 +69,8 @@ sudo cp 'hdparm.conf' '/etc/hdparm.conf'
 
 sudo apt-get install htop
 
+sudo apt-get install indicator-cpufreq -y
+
 # Remove ubuntu spyware 
 sudo apt remove ubuntu-report popularity-contest apport whoopsie -y
 sudo apt purge ubuntu-report popularity-contest apport whoopsie -y
@@ -126,6 +128,22 @@ cd ..
 sudo cp 'memavaild.conf' '/etc/memavaild.conf'
 sudo systemctl enable --now memavaild.service
 sudo systemctl restart --now memavaild.service
+
+##############################################################################
+# Use tuned-adm.
+# The tuned daemon can be used to apply system tuning adjustments either
+# dynamically, orstatically.
+# There are pre-defined tuning profiles that reflect 
+# particular workload requirements.
+# Most users will get the most benefit from using a desktop profile 
+# The <<tuned-adm list>> command is used to list all available tuning profiles.
+# You have 27 options (-:
+
+sudo apt install tuned tuned-utils tuned-utils-systemtap
+sudo tuned-adm profile desktop
+sudo tuned-adm active
+##############################################################################
+
 sudo apt-get autoclean -y
 
 sudo apt-get auto-remove -yy
