@@ -139,7 +139,7 @@ sudo systemctl restart --now memavaild.service
 # The <<tuned-adm list>> command is used to list all available tuning profiles.
 # You have 27 options (-:
 
-sudo apt install tuned tuned-utils tuned-utils-systemtap
+sudo apt install tuned tuned-utils tuned-utils-systemtap -y
 sudo tuned-adm profile desktop
 sudo tuned-adm active
 ##############################################################################
