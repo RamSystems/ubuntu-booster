@@ -22,14 +22,6 @@ sudo apt-get install prelink -y
 
 sudo cp  'sysctl.conf' '/etc/sysctl.conf'
     sudo echo 'net.core.default_qdisc = fq_pie' | sudo tee /etc/sysctl.d/90-override.conf
-    sudo -i echo '' >> /etc/sysctl.conf
-    sudo -i echo '#CFS tweak' >> /etc/sysctl.conf
-    sudo -i echo 'kernel.sched_latency_ns = 3000000' >> /etc/sysctl.conf
-    sudo -i echo 'kernel.sched_min_granularity_ns = 300000' >> /etc/sysctl.conf
-    sudo -i echo 'kernel.sched_wakeup_granularity_ns = 500000' >> /etc/sysctl.conf
-    sudo -i echo 'kernel.sched_migration_cost_ns = 50000' >> /etc/sysctl.conf
-    sudo -i echo 'kernel.sched_nr_migrate = 128' >> /etc/sysctl.conf
-
 
 sudo apt-get install gnome-disk-utility -y
 
@@ -73,6 +65,8 @@ sudo apt-get install mesa-utils-extra -y
 sudo cp 'hdparm.conf' '/etc/hdparm.conf'
 
 sudo apt-get install htop
+
+sudo apt-get install indicator-cpufreq -y
 
 # Remove ubuntu spyware 
 sudo apt remove ubuntu-report popularity-contest apport whoopsie -y
@@ -133,6 +127,20 @@ sudo cp 'memavaild.conf' '/etc/memavaild.conf'
 sudo systemctl enable --now memavaild.service
 sudo systemctl restart --now memavaild.service
 
+##############################################################################
+# Use tuned-adm.
+# The tuned daemon can be used to apply system tuning adjustments either
+# dynamically, orstatically.
+# There are pre-defined tuning profiles that reflect 
+# particular workload requirements.
+# Most users will get the most benefit from using a desktop profile 
+# The <<tuned-adm list>> command is used to list all available tuning profiles.
+# You have 27 options (-:
+
+sudo apt install tuned tuned-utils tuned-utils-systemtap
+sudo tuned-adm profile desktop
+sudo tuned-adm active
+##############################################################################
 
 sudo apt-get autoclean -y
 
