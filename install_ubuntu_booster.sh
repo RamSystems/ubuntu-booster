@@ -22,15 +22,15 @@ chmod +x init-zram-swapping
 sudo apt-get install dialog
 
 HEIGHT=15
-WIDTH=40
+WIDTH=76
 CHOICE_HEIGHT=4
 BACKTITLE="Create by RamSystems:https://github.com/RamSystems/ubuntu-booster"
 TITLE="Feel the power of Linux"
 MENU="Choose one of the following options:"
 
-OPTIONS=(1 "1.Install with liquorix-kernel"
-         2 "2.Install with xanmod-cacule-kernel"
-         3 "3.Install with ubuntu-kernel"
+OPTIONS=(1 "1.Install with liquorix-kernel(Gives high performance to all users)"
+         2 "2.Install with xanmod-cacule-kernel(Recommended for gamers only)"
+         3 "3.Install with ubuntu-kernel(Stable with all drivers)"
          4 "4.Backup important files")
 
 CHOICE=$(dialog --clear \
