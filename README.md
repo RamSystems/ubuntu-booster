@@ -89,8 +89,24 @@ It is possible to backup important files
 
 You will always have the option to use the tool
 Grub Customizer which is also installed
-To replace kernel 
+To replace kernel
 
+#
+### Use tuned-adm
+To choose the profile that can suit your requirements 
+
+#### Enter to list profiles [* you have 27 profiles (-: *]
+#
+tuned-adm list
+#
+#### Select a profile
+#
+sudo tuned-adm {profile name}
+#
+### Activate the profile 
+#
+sudo tuned-adm active
+# 
 #
 # Feel the power of Linux 
 
