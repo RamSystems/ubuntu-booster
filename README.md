@@ -57,27 +57,27 @@ Recommends installing on a light and clean desktop like - xfce or LXDE.
 #
 Open a terminal and run the following command
 #
-sudo apt-get update
+$ sudo apt-get update
 
-sudo apt-get install git
+$ sudo apt-get install git
 #
 Download the tool to home folder
 #
-git clone https://github.com/RamSystems/ubuntu-booster.git 
+$ git clone https://github.com/RamSystems/ubuntu-booster.git 
 
 #
-cd ubuntu-booster &&  chmod +x install_ubuntu_booster.sh &&  sudo ./install_ubuntu_booster.sh -yy
+$ cd ubuntu-booster &&  chmod +x install_ubuntu_booster.sh &&  sudo ./install_ubuntu_booster.sh -yy
 #
 
 or
 
 #
 
-cd ubuntu-booster
+$ cd ubuntu-booster
 #
-chmod +x install_ubuntu_booster.sh
+$ chmod +x install_ubuntu_booster.sh
 #
-sudo ./install_ubuntu_booster.sh
+$ sudo ./install_ubuntu_booster.sh
 #
 
 You have three options:
@@ -97,16 +97,70 @@ To choose the profile that can suit your requirements
 
 #### Enter to list profiles [* you have 27 profiles (-: *]
 #
-tuned-adm list
+$ tuned-adm list
 #
 #### Select a profile
 #
-sudo tuned-adm {profile name}
+$ sudo tuned-adm {profile name}
 #
-### Activate the profile 
+#### Activate the profile 
 #
-sudo tuned-adm active
+$ sudo tuned-adm active
 # 
+#
+
+
+
+### Use booster-pocket-router (beta)
+
+While more and more people today have a fast Internet connection,
+there are plenty of other people that do not.
+The aim of this project is to create a solution that combines multiple
+Internet access points (LTE, ADSL) into one single tunable network connection.
+
+How does it work?
+In short words, when booster spawns,
+it identifies the network interfaces available in the system that provide an 
+active internet connection. It then starts a socks5 proxy server.
+According to some particular strategy (still not configurable),
+and a set of policies (configurable),
+the server is able to distribute the incoming
+network traffic across the collected network interfaces.
+
+More details on the developer page:
+https://github.com/booster-pocket-router/booster 
+
+#### install booster-pocket-router from snap
+
+#### For ubuntu
+
+#
+$ sudo apt update
+#
+$ sudo apt install snapd
+#
+$ sudo snap install booster --beta
+
+#### for mint
+
+#
+$ sudo rm /etc/apt/preferences.d/nosnap.pref
+#
+$ sudo apt update
+#
+$ sudo apt install snapd
+#
+$ sudo snap install booster --beta
+#
+#### To use the tool
+#
+#### opening the terminal and adding the command:
+#
+$  /snap/booster/126/booster server
+#
+#### To stop the service simply close the terminal or press ctrl + c 
+#
+#
 #
 # Feel the power of Linux 
 
