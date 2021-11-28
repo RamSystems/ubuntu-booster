@@ -141,7 +141,8 @@ $ sudo apt install snapd
 #
 $ sudo snap install booster --beta
 
-#### for mint
+#
+#### For mint
 
 #
 $ sudo rm /etc/apt/preferences.d/nosnap.pref
@@ -154,7 +155,7 @@ $ sudo snap install booster --beta
 #
 #### To use the tool
 #
-#### opening the terminal and adding the command:
+#### opening the terminal and run the command:
 #
 $  /snap/booster/126/booster server
 #
