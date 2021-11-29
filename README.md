@@ -101,7 +101,7 @@ $ tuned-adm list
 #
 #### Select a profile
 #
-$ sudo tuned-adm {profile name}
+$ sudo tuned-adm profile {profile name}
 #
 #### Activate the profile 
 #
